@@ -1,0 +1,38 @@
+From 5ebf5cbf4612de45822f3e91406a861ee8601e8e Mon Sep 17 00:00:00 2001
+From: Sakura286 <sakura286@outlook.com>
+Date: Thu, 30 May 2024 00:46:46 +0800
+Subject: [PATCH] add cstdint header for uint64_t support
+
+---
+ debian/patches/add-header-cstdint.patch | 10 ++++++++++
+ debian/patches/series                   |  1 +
+ 2 files changed, 11 insertions(+)
+ create mode 100644 debian/patches/add-header-cstdint.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/add-header-cstdint.patch b/debian/patches/add-header-cstdint.patch
+new file mode 100644
+index 0000000..2a13109
+--- /dev/null
++++ b/debian/patches/add-header-cstdint.patch
+@@ -0,0 +1,10 @@
++--- a/include/caret_analyze_cpp_impl/record.hpp
+++++ b/include/caret_analyze_cpp_impl/record.hpp
++@@ -25,6 +25,7 @@
++ #include <algorithm>
++ #include <utility>
++ #include <iterator>
+++#include <cstdint>
++ 
++ #include "caret_analyze_cpp_impl/column_manager.hpp"
++ 
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 0000000..89191fe
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++add-header-cstdint.patch
+-- 
+2.34.1
+
