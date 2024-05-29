@@ -14,7 +14,7 @@ tracks:
     name: caret_analyze_cpp_impl
     patches: null
     release_inc: '6'
-    release_repo_url: null
+    release_repo_url: git@github.com:revyos-ros/caret_analyze_cpp_impl-release.git
     release_tag: v:{version}
     ros_distro: humble
     vcs_type: git
