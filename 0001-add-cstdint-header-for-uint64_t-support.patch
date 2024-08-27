@@ -1,4 +1,4 @@
-From 5ebf5cbf4612de45822f3e91406a861ee8601e8e Mon Sep 17 00:00:00 2001
+From 16a16e0dc3f77bdc9191744392aa5af535231a6c Mon Sep 17 00:00:00 2001
 From: Sakura286 <sakura286@outlook.com>
 Date: Thu, 30 May 2024 00:46:46 +0800
 Subject: [PATCH] add cstdint header for uint64_t support
@@ -34,5 +34,5 @@ index 0000000..89191fe
 @@ -0,0 +1 @@
 +add-header-cstdint.patch
 -- 
-2.34.1
+2.45.2
 
